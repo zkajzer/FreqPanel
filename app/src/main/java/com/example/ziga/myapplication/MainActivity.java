@@ -23,25 +23,25 @@ public class MainActivity extends Activity {
         stop.setEnabled(false);
         play.setEnabled(false);
 
-        AudioEncoder ae = new AudioEncoder();
-        ae.start();
+        //AudioEncoder ae = new AudioEncoder();
+        //ae.start();
     }
 
 
     public void onClickRecord(View view) {
-        recorder.startRecording();
+        recorder.start();
 
         record.setEnabled(false);
         stop.setEnabled(true);
     }
 
     public void onClickStop(View view) {
-        recorder.stopRecording();
+        recorder.stop();
 
         play.setEnabled(true);
         stop.setEnabled(false);
     }
 
-    public void onClickPlay(View view)throws IllegalArgumentException,SecurityException,IllegalStateException {
+    public void onClickPlay(View view){
     }
 }
